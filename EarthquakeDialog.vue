@@ -27,9 +27,11 @@ document.getElementById("dialog")?.addEventListener("click", function (event) {
   <div
     v-if="showDialog"
     class="dialog-overlay"
+    id="overlay"
     @click="closeDialog"
   >
     <div
+      id="dialog"
       class="dialog"
       @click.stop
     >
